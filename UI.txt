@@ -1,0 +1,292 @@
+codewithsrikanth@gmail.com
+Full Stack Web Development by using Pure Client Side Technologies:
+
+
+Realtime applications:
+Stand Alone Apps: For every user there would be seperate installation, one user and one installation is required.
+	- Console Apps + Embeed Systems
+	- Windows Apps
+	- Mobile Apps
+	- IOT(Internet Of Things) Apps
+Distributed Apps: One installation is enough for all the users, and no need to install in their machine also.
+	- Service Based Apps
+	- Web Apps etc.
+
+Web Applications:
+- To build these applications we need to have a technology i.e. Web Technology.
+- These web technologies are categorized into two types
+	- Server Side/Backend:  ASP.Net, ADO.Net, EF, JSP, Struts etc.
+	- Client Side/Frontend: The technology which will be understandable by the browser is called client side technology, these are completly light weight means which will not occupy more server resources, so that performence is great.
+
+Fullstack web development:
+- HTML5
+- CSS3
+- Bootstrap
+- Javascript
+- jQeury
+- Express JS
+- Mango DB
+- Node JS
+- Angular + React JS
+
+Duration: 2.5/3 Months
+Timings: 9:00AM to 10:30AM
+--------------------------------------------------------------------------------------------------------------
+HTML5:
+- Hypertext Markup Langauge.
+- Browser will understand only HTML so that we must have to use HTML while developing web application, irrespective of web technology.
+- In any HTML web page we have 3 things
+	- Tags: A tag which is represented with angular brackets.
+		- We have two tags
+			- Open tag <>
+			- Closing tag </>
+	- Attributes: It is used to add the additional behaviour to the tags.
+		- We have two types of attributes
+			- Global Attributes: Can be used with any tag in HTML
+				- id, class, style etc.
+			- Local Attributes: These are limited to perticular tags.
+				- href, src, border,align etc.
+	- Elements: It is from start to end
+		- We have two types
+			- Normal Elements: Which comes with content.
+				<h1>Welcome</h1>
+			- Void Elements: Which is not having any content.
+				<input type="radio" value="Sample"/>
+
+
+Structure of HTML5:
+<!DOCTYPE html>
+<html>
+ <head>Will contain Information about the page</head>
+ <body>Will contain content to display to the user</body>
+</html>
+--------------------------------------------------------------------------------------------------------------
+Code Editors and IDE's in realtime:
+- Code Editors are just used to write the code, but if we want to compile and execute it we must depend on any other tools, examples are Notepad,Notepad++, Sublime, Brackets, Editplus etc.
+- IDE stands for Integrated Development Environment, which is used to Write the code, compile it and also execute it, Examples are Visual Studio, VS Code, Eclipse, Netbeans etc.
+Note: To build client side apps in realtime we use mostly "VS Code".
+- VS Code is offers following features like
+	- Intellesence Support
+	- Debugging Support for Javascript based programms
+	- In built support of GIT SCM(Source Code Management) tool.
+	- Extensions
+	- Cross platform means can run on Windows, Mac and Linux OS etc.
+
+Software requirements:
+- Windows/Mac Operating System
+- Visual Studio Code
+
+Later:
+- Node JS Server
+- NPM
+- Angular CLI
+- Typescript
+- React CLI  
+--------------------------------------------------------------------------------------------------------------
+HTML5 Tags:
+
+- <!DOCTYPE html> : It is used to tells the browser which version of HTML document we are using. Generally we use HTML5.
+- <html> : It is used to create the HTML document. Every HTML document will start from there.
+- <head> : It is used to add metadata of the HTML doument, that means adding CSS, Scripts, Fav Icons, information about the document i.e. Author, When it was published, SEO, Redirecting request, Automatic refresh, Specifyng viewport size etc.
+- <body> : It is used to write the content which will be display on the browser.
+
+In Body we have following categories of tags are available like 
+	- Text Formatting Tags
+	- Links
+	- Collection Tags
+	- Input Tags
+	- Semantic Tags 
+
+Text Formatting tags:
+- These are used to represent the text.
+- Examples: <h1>, <p>, <b>,<i>,<em>,<strong> etc.
+--------------------------------------------------------------------------------------------------------------	
+Links in HTML:
+- These are used to provide the navigation within the application or out of the application
+- To provide the navigation for the application we use <a> "anchor".
+- <a> we have an attribute "href" stands for Hyper Link Reference can be used to specify url, file location etc etc.
+- In HTML we have two paths
+	- Reletive path: No need to give from the root folder. 
+	- Absolute path: We suppose to give complete path.
+- Syntax: <a href="path" target="_blank">Link Text</a>
+--------------------------------------------------------------------------------------------------------------
+Collection Tags in HTML:
+- Lists: It is used to display similar type of items.
+	- Ordered List: It is used to display the items in an order(<ol>,<li>).
+	- Unordered List: Here we don't need to follow the order(<ul>,<li>).
+	- Definition List: It is used to display the list of definitions(<dl>,<dt>,<dd>).
+- Tables: These are used to display different types of data.
+--------------------------------------------------------------------------------------------------------------
+Input Elements and form tag:
+- These elements are used to take the input from the user.
+- We have different input elements are available like 
+	<input type="text/password/range/number/color etc."/>
+- In HTML, every input element should be decorated with <form> tag.
+	- It will take care of validations
+	- It will send the request to the specified URL 
+	- It will executes the functionality of reset button
+- For the <form> tag we have two importent attributes like 
+	- action: It is used to specify the URL, to where we need to submit the request.
+	- method:
+		- get: Used to get the data or share the data within the application
+		- post: Used to insert the data to the server.
+- In HTML5, we have 3 buttons
+	- <input type="button">	: If the method type is "get" will use normal button.
+	- <input type="reset">	: It is used to clear the form input data.
+ 	- <input type="submit">	: If the method type is "post" w-ill use submit button.
+
+Note:
+- Every content in the HTML page should be wrapped with HTML tags.
+- In HTML5 we have different input elements are available, if it supported by the browser it will be displayed, else it will be render that HTML input element as "TextBox".
+--------------------------------------------------------------------------------------------------------------CSS(Cascading Style Sheets):
+- CSS is used to apply the styles for HTML tags.
+- CSS which contains several properties those are used to apply the styles.
+- We can write CSS in 3 ways
+	- Inline Styles: Can be applied directly to the HTML tags by using "style" attribute.
+		- These are not good programming practice, don't use it.
+	- Internal Styles: Can be written within the HTML page by using <style> tag.
+		- Can be applied only for single HTML page.
+	- External Styles: These are written in a seperate file and can be included with <link>
+		- Best practice to use.
+		- Once if we can define external styles can be reused across the application.
+Syntax:
+selector{
+   property:value;
+}
+
+- Selector is used to select the HTML element from the application.
+- We have different selectors like
+	- ID selector
+	- Class Selector
+	- Name selector
+	- Grouping Selector
+	- Root selector etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
